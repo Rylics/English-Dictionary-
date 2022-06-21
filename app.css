@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 100%;
+    
+}
+
+.wrapper {
+   
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    width: 700px;
+    min-width: 200px;
+    height: 600px;
+    text-align: center;
+    background-image: url(/Dictionary/img/Reading\ glasses-pana.svg);
+  
+
+  
+}
+.word{
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: larger;
+}
+.wrapper-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    margin-top: 5%;
+}
+
+input{
+    border-radius: 10px;
+    height: 40px;
+    width: 380px;
+    background-color:gold;
+    text-align: center;
+}
+
+::placeholder{
+    text-align: start;
+    padding-left: 10px;
+    color: black;
+    font-weight: 500;
+ }
+ 
+
+.button{
+    cursor: pointer;
+}
+
+.content{
+    opacity: 0;
+    
+    margin: 50px auto;
+    width: 400px;
+    padding: 10px;
+    text-align: start;
+    height: 100px;
+    border-radius: 20px;
+    background-color:gold;
+    border-width: 10px;
+    height: max-content;
+}
+
+
+.audio{
+    margin-left: 50px;
+}
+
+.show-content{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    width: 250px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.meaning,.example,.synonyms{
+    background-color: white;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+h3{
+    color: grey;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+
+.meaning p,.example p,.synonyms p {
+    margin-top: 10px;
+}
+
+.audio{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 456px){
+    .content{
+        width: 300px;
+        
+    }
+    input{
+        width: 170px;
+    }
+}
+@media only screen and (max-width: 286px){
+    .content{
+        width: 200px;
+    }
+    input{
+        width: 135px;
+    }
+}
